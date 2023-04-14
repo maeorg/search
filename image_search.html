@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .right {
+                text-align: right;
+            }
+
+            #search_box {
+                text-align: center;
+                padding: 10px;
+            }
+
+            #search_button {
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                color: #3c4043;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            #rounded_corners {
+                border-radius: 25px;
+                padding: 10px;
+                width: 561px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            #logo {
+                margin: 30px;
+            }
+    </style>
+    </head>
+    <body>
+        <div class="right"><a href="index.html">Google Search</a></div>
+        <div class="center">
+            <img id="logo" alt="Google" src="googlelogo_color_272x92dp.png" width="272">
+        </div>
+        <div id="search_box">
+            <form action="http://www.google.com/images?">
+                <div id="search_box">
+                    <input id="rounded_corners" type="text" name="q">
+                </div>    
+                <div>
+                    <input id="search_button" type="submit" value="Google Image Search">
+            </form>
+        </div>
+        
+    </body>
+</html>

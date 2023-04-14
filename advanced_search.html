@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .right {
+                text-align: right;
+            }
+
+            #search_button {
+                font-family:Google Sans,Roboto,Helvetica,Arial,sans-serif;
+                font-size: 13px;
+                border: 1px solid #3079ed;
+                color: #fff;
+                background-color: #4d90fe;
+                background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+                padding: 10px;
+                border-radius: 2px;
+                margin: 10px 0;
+                font-size: 11px;
+                font-weight: bold;
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            #top_text {
+                font-size: 16px;
+                font-weight: 500;
+                margin: 10px;
+                margin-left: 35px;
+                margin-top: 40px;
+            }
+
+            body {
+                font-family: arial,sans-serif;
+            }
+
+            .search_text {
+                font-size: 13px;
+                margin: 15px 0 15px 0;
+                min-width: 167px;
+                width: 12%;
+                display: inline-block;
+            }
+
+            .search_text_box {
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+                min-width: 167px;
+                display: inline-block;
+                width: 36%;
+            }
+
+            .test {
+                margin-left: 35px;
+                width: 100%;
+                display: block;
+            }
+
+            .advanced_text {
+                color: #d93025;
+                font-size: 20px;
+                display: block;
+                margin: 25px 35px;
+            }
+
+            .gy3Eif {
+                border-bottom: 1px solid #ebebeb;
+            }
+
+            #logo {
+                padding-left: 16px;
+            }
+
+            .align_search_button {
+                float: right;
+                width: 60.6%;
+            }
+    </style>
+    </head>
+    
+    <body>
+        <header>
+            <div class="right"><a href="index.html">Google Search</a></div>
+            <img id="logo" alt="Google" src="google_logo.png" width="74">
+        </header>
+        <div class="advanced_text">
+            <label>Täpsem otsing</label>
+        </div>
+        <div class="gy3Eif"></div>
+        <form action="https://google.com/search">
+            <p id="top_text">Find pages with ...</p>
+            <div class="test">
+                <div class="search_text">
+                    all these words:
+                </div>
+                <input class="search_text_box" type="text" name="as_q"><br>
+                <div class="search_text">
+                    this exact word or phrase:
+                </div>
+                <input class="search_text_box" type="text" name="as_epq"><br>
+                <div class="search_text">
+                    any of these words:
+                </div>
+                <input class="search_text_box" type="text" name="as_oq"><br>
+                <div class="search_text">
+                    none of these words:
+                </div>
+                <input class="search_text_box" type="text" name="as_eq"><br>
+
+                <div class="align_search_button">
+                    <input id="search_button" type="submit" value="Google Advanced Search">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
